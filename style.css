@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 15px;
+}
+
+.main {
+    height: 95vh;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.first-album,
+.second-album,
+.third-album,
+.fourth-album,
+.fifth-album {
+    position: absolute;
+    height: 95vh;
+    max-width: 100%;
+}
+
+.first-album {
+    clip-path: polygon(0 0, 40% 0, 40% 100%, 0% 100%);
+}
+
+.second-album {
+    left: 275px;
+    /* clip-path: polygon(20% 0, 39% 0, 39% 100%, 20% 100%); */
+    clip-path: polygon(5% 0, 45% 0, 45% 100%, 5% 100%);
+}
+
+.third-album {
+    left: 230px;
+    /* clip-path: polygon(60% 0, 59% 0, 59% 100%, 60% 100%); */
+    clip-path: polygon(50% 0, 90% 0, 90% 100%, 50% 100%);
+}
+
+.fourth-album {
+    left: 750px;
+    /* clip-path: polygon(80% 0, 79% 0, 79% 100%, 80% 100%); */
+    clip-path: polygon(27.5% 0, 67.5% 0, 67.5% 100%, 27.5% 100%);
+}
+
+.fifth-album {
+    clip-path: polygon(100% 0, 80% 0, 80% 100%, 100% 100%);
+}
