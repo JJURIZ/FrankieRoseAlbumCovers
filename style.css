@@ -5,48 +5,80 @@
 }
 
 body {
-    padding: 15px;
+    padding: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
 }
 
 .main {
     height: 95vh;
-    position: relative;
-    display: inline-block;
     width: 100%;
+    background-image: url("https://f4.bcbits.com/img/a1811713498_10.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
 }
 
-.first-album,
-.second-album,
-.third-album,
-.fourth-album,
-.fifth-album {
+.primary {
     position: absolute;
-    height: 95vh;
-    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: .3rem .3rem;
 }
 
-.first-album {
-    clip-path: polygon(0 0, 40% 0, 40% 100%, 0% 100%);
+.primary-artist {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+
+    animation-name: moveInTop;
+    animation-duration: 3s;
 }
 
-.second-album {
-    left: 275px;
-    /* clip-path: polygon(20% 0, 39% 0, 39% 100%, 20% 100%); */
-    clip-path: polygon(5% 0, 45% 0, 45% 100%, 5% 100%);
+.primary-title {
+    display: block;
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+
+    animation-name: moveInBottom;
+    animation-duration: 3s;
 }
 
-.third-album {
-    left: 230px;
-    /* clip-path: polygon(60% 0, 59% 0, 59% 100%, 60% 100%); */
-    clip-path: polygon(50% 0, 90% 0, 90% 100%, 50% 100%);
+.media-player {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-.fourth-album {
-    left: 750px;
-    /* clip-path: polygon(80% 0, 79% 0, 79% 100%, 80% 100%); */
-    clip-path: polygon(27.5% 0, 67.5% 0, 67.5% 100%, 27.5% 100%);
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
-.fifth-album {
-    clip-path: polygon(100% 0, 80% 0, 80% 100%, 100% 100%);
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
+
+
