@@ -1,0 +1,10 @@
+.row {
+    max-width: $grid-width; 
+    margin: 0 auto;
+
+@include clearfix;
+ }
+
+.col-1-of-5 {
+    width: calc((100% -4 * #{$gutter-horizontal}) / 5)
+}

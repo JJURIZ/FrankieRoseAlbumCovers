@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  padding: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 2rem; }
+
+.main {
+  height: 95vh;
+  width: 100%;
+  background-image: url("https://f4.bcbits.com/img/a1811713498_10.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.album__row {
+  position: relative;
+  height: 50rem; }
+  .album__row__layout {
+    width: 23rem; }
+
+.album__layout--1 {
+  position: absolute;
+  height: 25rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 20rem;
+  padding-left: 5rem; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.col-1-of-5 {
+  width: calc((100% -4 * 5rem) / 5); }
+
+.primary__h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: .3rem .3rem; }
+
+.primary-artist {
+  display: block;
+  font-size: 5rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  animation-name: moveInTop;
+  animation-duration: 3s; }
+
+.primary-title {
+  display: block;
+  font-size: 4rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  animation-name: moveInBottom;
+  animation-duration: 3s; }

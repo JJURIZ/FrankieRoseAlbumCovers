@@ -1,0 +1,25 @@
+{
+  "name": "frankierosealbums",
+  "version": "1.0.0",
+  "description": "Testing CSS settings",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "sass": "^1.26.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JJURIZ/FrankieRoseAlbumCovers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JJURIZ/FrankieRoseAlbumCovers/issues"
+  },
+  "homepage": "https://github.com/JJURIZ/FrankieRoseAlbumCovers#readme"
+}

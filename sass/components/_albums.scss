@@ -1,0 +1,17 @@
+.album__row {
+    position: relative;
+    height: 50rem;
+
+    &__layout {
+        width: 23rem;
+    }
+}
+
+.album__layout--1 {
+    position:absolute;
+    height: 25rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    left: 0;
+    top: 20rem;
+    padding-left: 5rem;
+}
