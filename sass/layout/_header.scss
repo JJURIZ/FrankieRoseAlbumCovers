@@ -1,0 +1,26 @@
+.primary__h1 {
+    top: 0;
+    left: 50%;
+    text-align: center;
+    padding: .3rem .3rem;
+}
+
+.primary-artist {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+
+    animation-name: moveInTop;
+    animation-duration: 5s;
+}
+
+.primary-title {
+    display: block;
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+
+    animation-name: moveInBottom;
+    animation-duration: 3s;
+}

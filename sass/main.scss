@@ -3,39 +3,18 @@
 
 @import "base/base";
 @import "base/animations";
+@import "base/typography";
 
 @import "components/albums";
+@import "components/albumtracks";
+@import "components/icons";
 
 @import "layout/grid";
+@import "layout/header";
+
+@import "pages/home";
 
 
-.primary__h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: .3rem .3rem;
-}
 
-.primary-artist {
-    display: block;
-    font-size: 5rem;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-
-    animation-name: moveInTop;
-    animation-duration: 3s;
-}
-
-.primary-title {
-    display: block;
-    font-size: 4rem;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-
-    animation-name: moveInBottom;
-    animation-duration: 3s;
-}
 
 

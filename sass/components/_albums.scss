@@ -2,21 +2,29 @@
     padding: 2rem 0;
     position: relative;
     height: 20rem;
-
+    perspective: 150rem;
 
     &__side {
         height: 20rem;
+        transition: all .8s ease;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
+        backface-visibility: hidden;
         overflow: hidden;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+
+        &--back {
+            transform: rotateY(180deg)
+        }
     }
 
     &__cover {
 
         background-size: cover;
         height: 20rem;
+        border-radius: .1rem;
 
         &__album--1 {
             background-image: url(https://f4.bcbits.com/img/a2968607738_10.jpg);
@@ -39,8 +47,33 @@
         }
     }
 
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
 
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    }
+
+    &__details {
+        padding: 1rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
     
+            li {
+                text-align: center;
+                font-size: $album-titles;
+                padding: .5rem;
+    
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-black;
+                }
+            }
+        }
+    }
 }
 
 
