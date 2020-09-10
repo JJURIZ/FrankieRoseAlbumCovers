@@ -1,17 +1,51 @@
-.album__row {
+.album {
+    padding: 2rem 0;
     position: relative;
-    height: 50rem;
+    height: 20rem;
 
-    &__layout {
-        width: 23rem;
+
+    &__side {
+        height: 20rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
     }
+
+    &__cover {
+
+        background-size: cover;
+        height: 20rem;
+
+        &__album--1 {
+            background-image: url(https://f4.bcbits.com/img/a2968607738_10.jpg);
+        }
+
+        &__album--2 {
+            background-image: url(https://f4.bcbits.com/img/a3704103730_10.jpg);
+        }
+
+        &__album--3 {
+            background-image: url(https://f4.bcbits.com/img/a1811713498_10.jpg);
+        }
+
+        &__album--4 {
+            background-image: url(https://f4.bcbits.com/img/a1241228378_10.jpg);
+        }
+
+        &__album--5 {
+            background-image: url(https://f4.bcbits.com/img/a0827930632_10.jpg);
+        }
+    }
+
+
+    
 }
 
-.album__layout--1 {
-    position:absolute;
-    height: 25rem;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-    left: 0;
-    top: 20rem;
-    padding-left: 5rem;
-}
+
+
+
+
+
+

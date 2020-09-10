@@ -12,7 +12,6 @@ body {
 .main {
   height: 95vh;
   width: 100%;
-  background-image: url("https://f4.bcbits.com/img/a1811713498_10.jpg");
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -33,34 +32,50 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-.album__row {
+.album {
+  padding: 2rem 0;
   position: relative;
-  height: 50rem; }
-  .album__row__layout {
-    width: 23rem; }
-
-.album__layout--1 {
-  position: absolute;
-  height: 25rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  left: 0;
-  top: 20rem;
-  padding-left: 5rem; }
+  height: 20rem; }
+  .album__side {
+    height: 20rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden; }
+  .album__cover {
+    background-size: cover;
+    height: 20rem; }
+    .album__cover__album--1 {
+      background-image: url(https://f4.bcbits.com/img/a2968607738_10.jpg); }
+    .album__cover__album--2 {
+      background-image: url(https://f4.bcbits.com/img/a3704103730_10.jpg); }
+    .album__cover__album--3 {
+      background-image: url(https://f4.bcbits.com/img/a1811713498_10.jpg); }
+    .album__cover__album--4 {
+      background-image: url(https://f4.bcbits.com/img/a1241228378_10.jpg); }
+    .album__cover__album--5 {
+      background-image: url(https://f4.bcbits.com/img/a0827930632_10.jpg); }
 
 .row {
   max-width: 114rem;
   margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 0.5rem; }
   .row::after {
     content: "";
     display: table;
     clear: both; }
-
-.col-1-of-5 {
-  width: calc((100% -4 * 5rem) / 5); }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 1rem; }
+  .row .col-1-of-5 {
+    width: calc((100% - 4 * 1rem) / 5); }
 
 .primary__h1 {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;

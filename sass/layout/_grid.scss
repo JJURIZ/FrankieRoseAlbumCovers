@@ -2,9 +2,21 @@
     max-width: $grid-width; 
     margin: 0 auto;
 
+    &:not(:last-child) {
+        margin-bottom: $gutter-verticle;
+    }
+
 @include clearfix;
- }
+
+[class^="col-"] {
+    float: left;
+
+    &:not(:last-child) {
+        margin-right: $gutter-horizontal;
+    }
+} 
 
 .col-1-of-5 {
-    width: calc((100% -4 * #{$gutter-horizontal}) / 5)
+    width: calc((100% - 4 * #{$gutter-horizontal}) / 5)
+}
 }
