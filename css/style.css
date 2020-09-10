@@ -32,6 +32,12 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -48,7 +54,9 @@ body {
   padding: 2rem 0;
   position: relative;
   height: 20rem;
-  perspective: 150rem; }
+  perspective: 150rem;
+  animation-name: fadeIn;
+  animation-duration: 8s; }
   .album__side {
     height: 20rem;
     transition: all .8s ease;
@@ -103,10 +111,14 @@ body {
   .track_listing__tracks li {
     list-style: none; }
 
-.spotify {
+.spotify,
+.apple,
+.bandcamp {
   width: 2rem;
   height: 2rem;
-  text-align: center; }
+  text-align: center;
+  animation-name: fadeIn;
+  animation-duration: 15s; }
 
 .row {
   max-width: 114rem;
@@ -128,7 +140,12 @@ body {
   top: 0;
   left: 50%;
   text-align: center;
-  padding: .3rem .3rem; }
+  padding: .3rem .3rem;
+  border: 0.4rem solid #000000;
+  width: 40%;
+  margin: 0 auto;
+  animation-name: moveInTop;
+  animation-duration: 5s; }
 
 .primary-artist {
   display: block;
@@ -147,4 +164,5 @@ body {
   animation-duration: 3s; }
 
 body {
-  background-image: linear-gradient(to right bottom, #8C8C8C, #D9D9D9); }
+  background-image: url("/assets/images/shapelined-_JBKdviweXI-unsplash.jpg");
+  background-blend-mode: screen; }

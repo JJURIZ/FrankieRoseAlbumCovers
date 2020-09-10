@@ -3,6 +3,8 @@
     position: relative;
     height: 20rem;
     perspective: 150rem;
+    animation-name: fadeIn;
+    animation-duration: 8s;
 
     &__side {
         height: 20rem;

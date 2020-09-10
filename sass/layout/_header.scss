@@ -3,6 +3,12 @@
     left: 50%;
     text-align: center;
     padding: .3rem .3rem;
+    border: .4rem solid $color-black;
+    width: 40%;
+    margin: 0 auto;
+
+    animation-name: moveInTop;
+    animation-duration: 5s;
 }
 
 .primary-artist {

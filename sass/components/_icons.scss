@@ -1,5 +1,10 @@
-.spotify {
-    width: 2rem;
-    height: 2rem;
-    text-align: center;
+
+.spotify,
+.apple,
+.bandcamp {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  animation-name: fadeIn;
+  animation-duration: 15s; 
 }
