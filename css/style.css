@@ -118,7 +118,9 @@ body {
   height: 2rem;
   text-align: center;
   animation-name: fadeIn;
-  animation-duration: 15s; }
+  animation-duration: 15s;
+  margin-right: 1rem;
+  margin-top: 2rem; }
 
 .row {
   max-width: 114rem;
