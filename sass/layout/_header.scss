@@ -1,32 +1,17 @@
 .primary__h1 {
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
     top: 0;
     left: 50%;
     text-align: center;
     padding: .3rem .3rem;
-    border: .4rem solid $color-black;
     width: 40%;
     margin: 0 auto;
-
+    display: block;
+    background-image: linear-gradient(to right, #333333, #384345, #535353);
+    -webkit-background-clip: text;
+    color: transparent;
     animation-name: moveInTop;
     animation-duration: 5s;
-}
-
-.primary-artist {
-    display: block;
-    font-size: 5rem;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-
-    animation-name: moveInTop;
-    animation-duration: 5s;
-}
-
-.primary-title {
-    display: block;
-    font-size: 4rem;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-
-    animation-name: moveInBottom;
-    animation-duration: 3s;
 }
